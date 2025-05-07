@@ -1,14 +1,16 @@
 import React from 'react';
 import { Search, MoreVertical, User } from 'lucide-react';
+import Image from 'next/image';
 
 function Nacbarpage() {
   return (
     <div className="w-full h-16 flex items-center px-6 justify-between bg-gradient-to-r from-yellow-400 via-green-300 to-cyan-500 shadow-md">
       {/* Logo */}
       <div className="flex items-center">
-        <img
+        <Image
           src="/HM1.png" // ใส่ path โลโก้ของคุณ
           alt="Logo"
+          fill
           className="w-10 h-10 rounded-full"
         />
       </div>

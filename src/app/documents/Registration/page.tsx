@@ -1,5 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 function Registrationpage() {
   return (
@@ -12,7 +14,7 @@ function Registrationpage() {
       <div className="bg-white w-full max-w-sm p-6 rounded-xl shadow-md">
         {/* โลโก้ตรงกลาง */}
         <div className="flex justify-center mb-6">
-          <img src="/HM1.png" alt="logo" className="w-24 h-24 rounded-full" />
+          <Image src="/HM1.png" alt="logo" fill className="w-24 h-24 rounded-full" />
         </div>
 
         {/* ฟอร์ม */}
@@ -49,12 +51,14 @@ function Registrationpage() {
           />
 
           <div className="flex justify-end pt-2">
+          <Link href="/documents/login">
             <button
               type="submit"
               className="bg-blue-500 text-white px-5 py-1.5 rounded-full"
             >
               ตกลง
             </button>
+            </Link>
           </div>
         </form>
       </div>
